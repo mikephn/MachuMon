@@ -1,0 +1,99 @@
+name: Collect Machu Picchu Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collector-data
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Check out application branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check out collector data branch
+        uses: actions/checkout@v4
+        with:
+          ref: collector-data
+          path: collector-branch
+          fetch-depth: 0
+        continue-on-error: true
+
+      - name: Prepare collector data workspace
+        run: |
+          if [ ! -d collector-branch/.git ]; then
+            git clone --no-checkout "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" collector-branch
+            cd collector-branch
+            git checkout --orphan collector-data
+            git rm -rf . >/dev/null 2>&1 || true
+            mkdir -p data/raw data/state public/data
+            printf '{\n  "generatedAt": null,\n  "source": "empty",\n  "snapshotCount": 0,\n  "trackedDates": [],\n  "routeDaySeries": [],\n  "latestByDate": [],\n  "metrics": {\n    "firstSnapshotAt": null,\n    "lastSnapshotAt": null,\n    "trackedDateCount": 0,\n    "routeCount": 0,\n    "activeRouteDays": 0,\n    "soldOutRouteDays": 0\n  },\n  "status": null\n}\n' > public/data/dashboard.json
+            git add .
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Initialize collector data branch"
+            git push origin collector-data
+            cd ..
+          fi
+
+          mkdir -p data raw-temp public/data data/state
+
+          if [ -d collector-branch/data ]; then
+            rsync -a collector-branch/data/ data/
+          fi
+
+          if [ -f collector-branch/public/data/dashboard.json ]; then
+            mkdir -p public/data
+            cp collector-branch/public/data/dashboard.json public/data/dashboard.json
+          fi
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Collect latest availability window
+        run: npm run collector:once
+
+      - name: Export dashboard payload
+        run: npm run export:data
+
+      - name: Copy updated data to collector branch
+        run: |
+          mkdir -p collector-branch/data collector-branch/public/data
+          rsync -a --delete data/ collector-branch/data/
+          cp public/data/dashboard.json collector-branch/public/data/dashboard.json
+
+      - name: Commit collector updates
+        run: |
+          cd collector-branch
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data public/data/dashboard.json
+
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update collector data"
+          git push origin collector-data
