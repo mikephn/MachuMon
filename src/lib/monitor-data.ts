@@ -75,11 +75,13 @@ export async function appendSnapshot(snapshot: AvailabilitySnapshot) {
 }
 
 export async function loadRawSnapshots(): Promise<AvailabilitySnapshot[]> {
-  await ensureDataDirs();
+  let files: string[];
 
-  const files = (await readdir(rawDir))
-    .filter((file) => file.endsWith(".jsonl"))
-    .sort();
+  try {
+    files = (await readdir(rawDir)).filter((file) => file.endsWith(".jsonl")).sort();
+  } catch {
+    return [];
+  }
 
   const snapshots: AvailabilitySnapshot[] = [];
 
@@ -302,8 +304,6 @@ async function loadRemoteDashboardData(): Promise<DashboardData | null> {
 }
 
 export async function loadDashboardData(): Promise<DashboardData> {
-  await ensureDataDirs();
-
   const remoteData = await loadRemoteDashboardData();
 
   if (remoteData) {
