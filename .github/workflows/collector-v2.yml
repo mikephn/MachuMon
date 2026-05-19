@@ -45,12 +45,15 @@ jobs:
             git rm -rf . >/dev/null 2>&1 || true
             mkdir -p data/raw data/state public/data
             printf '{\n  "generatedAt": null,\n  "source": "empty",\n  "snapshotCount": 0,\n  "trackedDates": [],\n  "routeDaySeries": [],\n  "latestByDate": [],\n  "metrics": {\n    "firstSnapshotAt": null,\n    "lastSnapshotAt": null,\n    "trackedDateCount": 0,\n    "routeCount": 0,\n    "activeRouteDays": 0,\n    "soldOutRouteDays": 0\n  },\n  "status": null\n}\n' > public/data/dashboard.json
+            printf '{\n  "$schema": "https://openapi.vercel.sh/vercel.json",\n  "ignoreCommand": "exit 0"\n}\n' > vercel.json
             git add .
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git commit -m "Initialize collector data branch"
             git push origin HEAD:collector-data
           fi
+
+          printf '{\n  "$schema": "https://openapi.vercel.sh/vercel.json",\n  "ignoreCommand": "exit 0"\n}\n' > vercel.json
 
           cd ..
 
@@ -97,7 +100,7 @@ jobs:
           git checkout collector-data
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data public/data/dashboard.json
+          git add data public/data/dashboard.json vercel.json
 
           if git diff --cached --quiet; then
             echo "No data changes to commit."
