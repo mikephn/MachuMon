@@ -106,5 +106,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Update collector data"
+          git commit -m "Update collector data."
           git push origin HEAD:collector-data
