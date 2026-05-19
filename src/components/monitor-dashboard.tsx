@@ -4,7 +4,6 @@ import dynamic from "next/dynamic";
 import { useDeferredValue, useState } from "react";
 
 import {
-  format,
   formatDistanceToNowStrict,
   isValid,
   parseISO,
@@ -28,21 +27,50 @@ const AvailabilityChart = dynamic(
 );
 
 const numberFormatter = new Intl.NumberFormat("en-US");
+const peruTimeZone = "America/Lima";
+const peruTimeLabel = "Peru time (PET, UTC-5)";
+const observedDateFormatter = new Intl.DateTimeFormat("en-GB", {
+  timeZone: peruTimeZone,
+  day: "2-digit",
+  month: "short",
+  year: "numeric",
+});
+const timestampFormatter = new Intl.DateTimeFormat("en-GB", {
+  timeZone: peruTimeZone,
+  day: "2-digit",
+  month: "short",
+  year: "numeric",
+  hour: "2-digit",
+  minute: "2-digit",
+  hour12: false,
+});
+const shortTimestampFormatter = new Intl.DateTimeFormat("en-GB", {
+  timeZone: peruTimeZone,
+  day: "2-digit",
+  month: "short",
+  hour: "2-digit",
+  minute: "2-digit",
+  hour12: false,
+});
 
 function formatObservedDate(value: string) {
-  const parsedValue = parseISO(`${value}T00:00:00`);
+  const parsedValue = new Date(`${value}T12:00:00Z`);
 
-  return isValid(parsedValue) ? format(parsedValue, "dd MMM yyyy") : value;
+  return isValid(parsedValue) ? observedDateFormatter.format(parsedValue) : value;
 }
 
-function formatTimestamp(value: string | null, pattern = "dd MMM yyyy HH:mm") {
+function formatTimestamp(value: string | null, compact = false) {
   if (!value) {
     return "Not yet";
   }
 
   const parsedValue = parseISO(value);
 
-  return isValid(parsedValue) ? format(parsedValue, pattern) : value;
+  if (!isValid(parsedValue)) {
+    return value;
+  }
+
+  return (compact ? shortTimestampFormatter : timestampFormatter).format(parsedValue);
 }
 
 function formatRelativeTimestamp(value: string | null) {
@@ -118,7 +146,7 @@ export function MonitorDashboard({ data }: MonitorDashboardProps) {
   const chartData =
     selectedSeries?.points.map((point) => ({
       capturedAt: point.capturedAt,
-      label: formatTimestamp(point.capturedAt, "dd MMM HH:mm"),
+      label: formatTimestamp(point.capturedAt, true),
       available: point.available,
       sold: point.sold,
       totalTickets: point.totalTickets,
@@ -179,6 +207,9 @@ export function MonitorDashboard({ data }: MonitorDashboardProps) {
             </span>
             <span className="rounded-full border border-[color:var(--line)] bg-white/75 px-4 py-2 font-mono text-[color:var(--foreground)]">
               last update {formatRelativeTimestamp(data.status?.lastHeartbeatAt ?? null)}
+            </span>
+            <span className="rounded-full border border-[color:var(--line)] bg-white/75 px-4 py-2 font-mono text-[color:var(--foreground)]">
+              timezone {peruTimeLabel}
             </span>
           </div>
         </div>

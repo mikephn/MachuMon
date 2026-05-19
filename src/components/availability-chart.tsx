@@ -1,6 +1,6 @@
 "use client";
 
-import { format, isValid, parseISO } from "date-fns";
+import { isValid, parseISO } from "date-fns";
 import {
   Area,
   AreaChart,
@@ -12,6 +12,15 @@ import {
 } from "recharts";
 
 const numberFormatter = new Intl.NumberFormat("en-US");
+const peruTimestampFormatter = new Intl.DateTimeFormat("en-GB", {
+  timeZone: "America/Lima",
+  day: "2-digit",
+  month: "short",
+  year: "numeric",
+  hour: "2-digit",
+  minute: "2-digit",
+  hour12: false,
+});
 
 type ChartPoint = {
   capturedAt: string;
@@ -28,7 +37,7 @@ type AvailabilityChartProps = {
 function formatTimestamp(value: string, pattern = "dd MMM yyyy HH:mm") {
   const parsedValue = parseISO(value);
 
-  return isValid(parsedValue) ? format(parsedValue, pattern) : value;
+  return isValid(parsedValue) ? peruTimestampFormatter.format(parsedValue) : value;
 }
 
 export function AvailabilityChart({ chartData }: AvailabilityChartProps) {
