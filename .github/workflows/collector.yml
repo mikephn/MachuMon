@@ -35,7 +35,14 @@ jobs:
         run: |
           if [ ! -d collector-branch/.git ]; then
             git clone --no-checkout "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" collector-branch
-            cd collector-branch
+          fi
+
+          cd collector-branch
+
+          if git ls-remote --exit-code --heads origin collector-data >/dev/null 2>&1; then
+            git fetch origin collector-data
+            git checkout -B collector-data origin/collector-data
+          else
             git checkout --orphan collector-data
             git rm -rf . >/dev/null 2>&1 || true
             mkdir -p data/raw data/state public/data
@@ -44,9 +51,10 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git commit -m "Initialize collector data branch"
-            git push origin collector-data
-            cd ..
+            git push origin HEAD:collector-data
           fi
+
+          cd ..
 
           mkdir -p data raw-temp public/data data/state
 
@@ -88,6 +96,7 @@ jobs:
       - name: Commit collector updates
         run: |
           cd collector-branch
+          git checkout collector-data
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data public/data/dashboard.json
@@ -98,4 +107,4 @@ jobs:
           fi
 
           git commit -m "Update collector data"
-          git push origin collector-data
+          git push origin HEAD:collector-data
