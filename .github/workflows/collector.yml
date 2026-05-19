@@ -72,6 +72,8 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Collect latest availability window
+        env:
+          MONITOR_ONCE_DURATION_MS: "150000"
         run: npm run collector:once
 
       - name: Export dashboard payload

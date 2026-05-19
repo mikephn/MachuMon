@@ -21,7 +21,10 @@ const targetUrl =
   process.env.MONITOR_URL ?? "https://tuboleto.cultura.pe/cusco/1000boletos";
 const once = process.argv.includes("--once");
 const headed = process.argv.includes("--headed");
-const sessionDurationMs = once ? 75_000 : 6 * 60 * 60 * 1000;
+const onceSessionDurationMs = Number(
+  process.env.MONITOR_ONCE_DURATION_MS ?? 150_000,
+);
+const sessionDurationMs = once ? onceSessionDurationMs : 6 * 60 * 60 * 1000;
 const heartbeatIntervalMs = 15_000;
 const restartDelayMs = 5_000;
 
