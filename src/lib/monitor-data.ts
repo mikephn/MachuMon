@@ -197,7 +197,7 @@ export function buildDashboardData(
       };
     })
     .sort((left, right) => {
-      const dateCompare = left.observedDate.localeCompare(right.observedDate);
+      const dateCompare = right.observedDate.localeCompare(left.observedDate);
 
       if (dateCompare !== 0) {
         return dateCompare;

@@ -88,6 +88,9 @@ type MonitorDashboardProps = {
 };
 
 export function MonitorDashboard({ data }: MonitorDashboardProps) {
+  const dropdownDateSummaries = [...data.latestByDate].sort((left, right) =>
+    right.observedDate.localeCompare(left.observedDate),
+  );
   const initialKey =
     data.routeDaySeries.find((series) => series.currentAvailable > 0)?.key ??
     data.routeDaySeries[0]?.key ??
@@ -288,7 +291,7 @@ export function MonitorDashboard({ data }: MonitorDashboardProps) {
                     value={selectedSeries?.key ?? ""}
                     onChange={(event) => setSelectedKey(event.target.value)}
                   >
-                    {data.latestByDate.map((summary) => (
+                    {dropdownDateSummaries.map((summary) => (
                       <optgroup
                         key={summary.observedDate}
                         label={formatObservedDate(summary.observedDate)}
