@@ -274,9 +274,7 @@ async function loadRemoteDashboardData(): Promise<DashboardData | null> {
           ? { authorization: `Bearer ${remoteDashboardToken}` }
           : {}),
       },
-      next: {
-        revalidate: 300,
-      },
+      cache: "no-store",
     });
 
     if (!response.ok) {
