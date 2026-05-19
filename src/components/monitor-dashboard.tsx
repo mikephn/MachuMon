@@ -88,18 +88,28 @@ type MonitorDashboardProps = {
 };
 
 export function MonitorDashboard({ data }: MonitorDashboardProps) {
+  const sortedRouteDaySeries = [...data.routeDaySeries].sort((left, right) => {
+    const dateCompare = right.observedDate.localeCompare(left.observedDate);
+
+    if (dateCompare !== 0) {
+      return dateCompare;
+    }
+
+    return left.routeName.localeCompare(right.routeName);
+  });
   const dropdownDateSummaries = [...data.latestByDate].sort((left, right) =>
     right.observedDate.localeCompare(left.observedDate),
   );
+  const latestDateBoards = dropdownDateSummaries.slice(0, 3);
   const initialKey =
-    data.routeDaySeries.find((series) => series.currentAvailable > 0)?.key ??
-    data.routeDaySeries[0]?.key ??
+    sortedRouteDaySeries.find((series) => series.currentAvailable > 0)?.key ??
+    sortedRouteDaySeries[0]?.key ??
     "";
   const [selectedKey, setSelectedKey] = useState(initialKey);
   const deferredSelectedKey = useDeferredValue(selectedKey);
   const selectedSeries =
-    data.routeDaySeries.find((series) => series.key === deferredSelectedKey) ??
-    data.routeDaySeries[0] ??
+    sortedRouteDaySeries.find((series) => series.key === deferredSelectedKey) ??
+    sortedRouteDaySeries[0] ??
     null;
   const selectedDateSummary =
     data.latestByDate.find(
@@ -296,7 +306,7 @@ export function MonitorDashboard({ data }: MonitorDashboardProps) {
                         key={summary.observedDate}
                         label={formatObservedDate(summary.observedDate)}
                       >
-                        {data.routeDaySeries
+                        {sortedRouteDaySeries
                           .filter((series) => series.observedDate === summary.observedDate)
                           .map((series) => (
                             <option key={series.key} value={series.key}>
@@ -355,7 +365,7 @@ export function MonitorDashboard({ data }: MonitorDashboardProps) {
                   Latest date boards
                 </p>
                 <div className="mt-4 grid gap-3">
-                  {data.latestByDate.map((summary) => (
+                  {latestDateBoards.map((summary) => (
                     <article
                       key={summary.observedDate}
                       className={`rounded-[24px] border px-4 py-4 ${
@@ -478,7 +488,7 @@ export function MonitorDashboard({ data }: MonitorDashboardProps) {
                   </tr>
                 </thead>
                 <tbody>
-                  {data.routeDaySeries.map((series) => (
+                  {sortedRouteDaySeries.map((series) => (
                     <tr key={series.key} className="rounded-2xl bg-white/70 shadow-[0_12px_28px_rgba(62,44,22,0.05)]">
                       <td className="rounded-l-2xl border-y border-l border-[color:var(--line)] px-3 py-4 text-sm font-medium text-[color:var(--foreground)]">
                         {formatObservedDate(series.observedDate)}
