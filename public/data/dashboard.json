@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-26T00:23:27.290Z",
+  "generatedAt": "2026-05-26T00:33:36.087Z",
   "source": "static",
-  "snapshotCount": 939,
+  "snapshotCount": 940,
   "trackedDates": [
     "2026-05-20",
     "2026-05-21",
@@ -921,6 +921,12 @@
           "available": 0,
           "sold": 50,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-05-26T00:31:09.304Z",
+          "available": 0,
+          "sold": 50,
+          "totalTickets": null
         }
       ]
     },
@@ -933,10 +939,10 @@
       "capacity": 100,
       "firstSeenAt": "2026-05-25T03:33:46.707Z",
       "firstAvailableAt": "2026-05-25T03:33:46.707Z",
-      "lastAvailableAt": "2026-05-26T00:22:00.018Z",
+      "lastAvailableAt": "2026-05-26T00:31:09.304Z",
       "soldOutAt": null,
-      "currentAvailable": 4,
-      "currentSold": 96,
+      "currentAvailable": 2,
+      "currentSold": 98,
       "peakAvailable": 100,
       "points": [
         {
@@ -1831,6 +1837,12 @@
           "capturedAt": "2026-05-26T00:22:00.018Z",
           "available": 4,
           "sold": 96,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-05-26T00:31:09.304Z",
+          "available": 2,
+          "sold": 98,
           "totalTickets": null
         }
       ]
@@ -2740,6 +2752,12 @@
         },
         {
           "capturedAt": "2026-05-26T00:22:00.018Z",
+          "available": 0,
+          "sold": 600,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-05-26T00:31:09.304Z",
           "available": 0,
           "sold": 600,
           "totalTickets": null
@@ -3654,6 +3672,12 @@
           "available": 0,
           "sold": 100,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-05-26T00:31:09.304Z",
+          "available": 0,
+          "sold": 100,
+          "totalTickets": null
         }
       ]
     },
@@ -4565,6 +4589,12 @@
           "available": 0,
           "sold": 50,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-05-26T00:31:09.304Z",
+          "available": 0,
+          "sold": 50,
+          "totalTickets": null
         }
       ]
     },
@@ -5473,6 +5503,12 @@
         },
         {
           "capturedAt": "2026-05-26T00:22:00.018Z",
+          "available": 0,
+          "sold": 100,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-05-26T00:31:09.304Z",
           "available": 0,
           "sold": 100,
           "totalTickets": null
@@ -35085,10 +35121,10 @@
     },
     {
       "observedDate": "2026-05-27",
-      "latestCapturedAt": "2026-05-26T00:22:00.018Z",
+      "latestCapturedAt": "2026-05-26T00:31:09.304Z",
       "totalTickets": null,
-      "totalAvailable": 4,
-      "totalSold": 996,
+      "totalAvailable": 2,
+      "totalSold": 998,
       "openRoutes": 1,
       "routes": [
         {
@@ -35106,8 +35142,8 @@
           "circuitName": "Circuito 1 - Panorámico",
           "routeName": "Ruta 1-B: Terraza superior",
           "capacity": 100,
-          "available": 4,
-          "sold": 96
+          "available": 2,
+          "sold": 98
         },
         {
           "routeId": 11,
@@ -35150,7 +35186,7 @@
   ],
   "metrics": {
     "firstSnapshotAt": "2026-05-19T19:20:44.702Z",
-    "lastSnapshotAt": "2026-05-26T00:22:00.018Z",
+    "lastSnapshotAt": "2026-05-26T00:31:09.304Z",
     "trackedDateCount": 8,
     "routeCount": 6,
     "activeRouteDays": 1,
@@ -35158,11 +35194,11 @@
   },
   "status": {
     "state": "running",
-    "sessionStartedAt": "2026-05-26T00:20:53.369Z",
-    "lastHeartbeatAt": "2026-05-26T00:23:26.840Z",
-    "lastSnapshotAt": "2026-05-26T00:22:00.018Z",
+    "sessionStartedAt": "2026-05-26T00:31:01.472Z",
+    "lastHeartbeatAt": "2026-05-26T00:33:35.617Z",
+    "lastSnapshotAt": "2026-05-26T00:31:09.304Z",
     "lastObservedDate": "2026-05-27",
-    "snapshotsWritten": 939,
+    "snapshotsWritten": 940,
     "uniqueDatesObserved": [
       "2026-05-20",
       "2026-05-21",
