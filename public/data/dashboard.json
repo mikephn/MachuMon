@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-19T16:04:03.179Z",
+  "generatedAt": "2026-06-19T16:13:59.819Z",
   "source": "static",
-  "snapshotCount": 4145,
+  "snapshotCount": 4146,
   "trackedDates": [
     "2026-05-20",
     "2026-05-21",
@@ -46,10 +46,10 @@
       "capacity": 50,
       "firstSeenAt": "2026-06-19T00:01:29.956Z",
       "firstAvailableAt": "2026-06-19T00:01:29.956Z",
-      "lastAvailableAt": "2026-06-19T15:52:20.207Z",
+      "lastAvailableAt": "2026-06-19T16:11:32.691Z",
       "soldOutAt": null,
-      "currentAvailable": 50,
-      "currentSold": 0,
+      "currentAvailable": 48,
+      "currentSold": 2,
       "peakAvailable": 50,
       "points": [
         {
@@ -321,6 +321,12 @@
           "available": 50,
           "sold": 0,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-06-19T16:11:32.691Z",
+          "available": 48,
+          "sold": 2,
+          "totalTickets": null
         }
       ]
     },
@@ -333,7 +339,7 @@
       "capacity": 100,
       "firstSeenAt": "2026-06-19T00:01:29.956Z",
       "firstAvailableAt": "2026-06-19T00:01:29.956Z",
-      "lastAvailableAt": "2026-06-19T15:52:20.207Z",
+      "lastAvailableAt": "2026-06-19T16:11:32.691Z",
       "soldOutAt": null,
       "currentAvailable": 99,
       "currentSold": 1,
@@ -608,6 +614,12 @@
           "available": 99,
           "sold": 1,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-06-19T16:11:32.691Z",
+          "available": 99,
+          "sold": 1,
+          "totalTickets": null
         }
       ]
     },
@@ -620,10 +632,10 @@
       "capacity": 600,
       "firstSeenAt": "2026-06-19T00:01:29.956Z",
       "firstAvailableAt": "2026-06-19T00:01:29.956Z",
-      "lastAvailableAt": "2026-06-19T15:52:20.207Z",
+      "lastAvailableAt": "2026-06-19T16:11:32.691Z",
       "soldOutAt": null,
-      "currentAvailable": 374,
-      "currentSold": 226,
+      "currentAvailable": 365,
+      "currentSold": 235,
       "peakAvailable": 600,
       "points": [
         {
@@ -895,6 +907,12 @@
           "available": 374,
           "sold": 226,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-06-19T16:11:32.691Z",
+          "available": 365,
+          "sold": 235,
+          "totalTickets": null
         }
       ]
     },
@@ -907,10 +925,10 @@
       "capacity": 100,
       "firstSeenAt": "2026-06-19T00:01:29.956Z",
       "firstAvailableAt": "2026-06-19T00:01:29.956Z",
-      "lastAvailableAt": "2026-06-19T15:52:20.207Z",
+      "lastAvailableAt": "2026-06-19T16:11:32.691Z",
       "soldOutAt": null,
-      "currentAvailable": 71,
-      "currentSold": 29,
+      "currentAvailable": 66,
+      "currentSold": 34,
       "peakAvailable": 100,
       "points": [
         {
@@ -1181,6 +1199,12 @@
           "capturedAt": "2026-06-19T15:52:20.207Z",
           "available": 71,
           "sold": 29,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-06-19T16:11:32.691Z",
+          "available": 66,
+          "sold": 34,
           "totalTickets": null
         }
       ]
@@ -1469,6 +1493,12 @@
           "available": 0,
           "sold": 50,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-06-19T16:11:32.691Z",
+          "available": 0,
+          "sold": 50,
+          "totalTickets": null
         }
       ]
     },
@@ -1481,7 +1511,7 @@
       "capacity": 100,
       "firstSeenAt": "2026-06-19T00:01:29.956Z",
       "firstAvailableAt": "2026-06-19T00:01:29.956Z",
-      "lastAvailableAt": "2026-06-19T15:52:20.207Z",
+      "lastAvailableAt": "2026-06-19T16:11:32.691Z",
       "soldOutAt": null,
       "currentAvailable": 95,
       "currentSold": 5,
@@ -1753,6 +1783,12 @@
         },
         {
           "capturedAt": "2026-06-19T15:52:20.207Z",
+          "available": 95,
+          "sold": 5,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-06-19T16:11:32.691Z",
           "available": 95,
           "sold": 5,
           "totalTickets": null
@@ -154509,10 +154545,10 @@
     },
     {
       "observedDate": "2026-06-20",
-      "latestCapturedAt": "2026-06-19T15:52:20.207Z",
+      "latestCapturedAt": "2026-06-19T16:11:32.691Z",
       "totalTickets": null,
-      "totalAvailable": 689,
-      "totalSold": 311,
+      "totalAvailable": 673,
+      "totalSold": 327,
       "openRoutes": 5,
       "routes": [
         {
@@ -154521,8 +154557,8 @@
           "circuitName": "Circuito 1 - Panorámico",
           "routeName": "Ruta 1-A: Montaña Machupicchu",
           "capacity": 50,
-          "available": 50,
-          "sold": 0
+          "available": 48,
+          "sold": 2
         },
         {
           "routeId": 8,
@@ -154539,8 +154575,8 @@
           "circuitName": "Circuito 2 - Circuito clásico",
           "routeName": "Ruta 2-A: Clásico Diseñada",
           "capacity": 600,
-          "available": 374,
-          "sold": 226
+          "available": 365,
+          "sold": 235
         },
         {
           "routeId": 12,
@@ -154548,8 +154584,8 @@
           "circuitName": "Circuito 2 - Circuito clásico",
           "routeName": "Ruta 2-B: Terraza Inferior",
           "capacity": 100,
-          "available": 71,
-          "sold": 29
+          "available": 66,
+          "sold": 34
         },
         {
           "routeId": 13,
@@ -154574,7 +154610,7 @@
   ],
   "metrics": {
     "firstSnapshotAt": "2026-05-19T19:20:44.702Z",
-    "lastSnapshotAt": "2026-06-19T15:52:20.207Z",
+    "lastSnapshotAt": "2026-06-19T16:11:32.691Z",
     "trackedDateCount": 32,
     "routeCount": 6,
     "activeRouteDays": 105,
@@ -154582,11 +154618,11 @@
   },
   "status": {
     "state": "running",
-    "sessionStartedAt": "2026-06-19T16:01:31.614Z",
-    "lastHeartbeatAt": "2026-06-19T16:04:02.623Z",
-    "lastSnapshotAt": "2026-06-19T15:52:20.207Z",
+    "sessionStartedAt": "2026-06-19T16:11:25.554Z",
+    "lastHeartbeatAt": "2026-06-19T16:13:59.261Z",
+    "lastSnapshotAt": "2026-06-19T16:11:32.691Z",
     "lastObservedDate": "2026-06-20",
-    "snapshotsWritten": 4145,
+    "snapshotsWritten": 4146,
     "uniqueDatesObserved": [
       "2026-05-20",
       "2026-05-21",
