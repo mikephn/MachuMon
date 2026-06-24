@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-24T16:44:02.346Z",
+  "generatedAt": "2026-06-24T16:54:11.739Z",
   "source": "static",
-  "snapshotCount": 4809,
+  "snapshotCount": 4810,
   "trackedDates": [
     "2026-05-20",
     "2026-05-21",
@@ -51,7 +51,7 @@
       "capacity": 50,
       "firstSeenAt": "2026-06-24T00:01:41.848Z",
       "firstAvailableAt": "2026-06-24T00:01:41.848Z",
-      "lastAvailableAt": "2026-06-24T16:31:50.211Z",
+      "lastAvailableAt": "2026-06-24T16:52:34.632Z",
       "soldOutAt": null,
       "currentAvailable": 48,
       "currentSold": 2,
@@ -296,6 +296,12 @@
           "available": 48,
           "sold": 2,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-06-24T16:52:34.632Z",
+          "available": 48,
+          "sold": 2,
+          "totalTickets": null
         }
       ]
     },
@@ -308,7 +314,7 @@
       "capacity": 100,
       "firstSeenAt": "2026-06-24T00:01:41.848Z",
       "firstAvailableAt": "2026-06-24T00:01:41.848Z",
-      "lastAvailableAt": "2026-06-24T16:31:50.211Z",
+      "lastAvailableAt": "2026-06-24T16:52:34.632Z",
       "soldOutAt": null,
       "currentAvailable": 99,
       "currentSold": 1,
@@ -553,6 +559,12 @@
           "available": 99,
           "sold": 1,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-06-24T16:52:34.632Z",
+          "available": 99,
+          "sold": 1,
+          "totalTickets": null
         }
       ]
     },
@@ -565,10 +577,10 @@
       "capacity": 600,
       "firstSeenAt": "2026-06-24T00:01:41.848Z",
       "firstAvailableAt": "2026-06-24T00:01:41.848Z",
-      "lastAvailableAt": "2026-06-24T16:31:50.211Z",
+      "lastAvailableAt": "2026-06-24T16:52:34.632Z",
       "soldOutAt": null,
-      "currentAvailable": 472,
-      "currentSold": 128,
+      "currentAvailable": 471,
+      "currentSold": 129,
       "peakAvailable": 600,
       "points": [
         {
@@ -810,6 +822,12 @@
           "available": 472,
           "sold": 128,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-06-24T16:52:34.632Z",
+          "available": 471,
+          "sold": 129,
+          "totalTickets": null
         }
       ]
     },
@@ -822,7 +840,7 @@
       "capacity": 100,
       "firstSeenAt": "2026-06-24T00:01:41.848Z",
       "firstAvailableAt": "2026-06-24T00:01:41.848Z",
-      "lastAvailableAt": "2026-06-24T16:31:50.211Z",
+      "lastAvailableAt": "2026-06-24T16:52:34.632Z",
       "soldOutAt": null,
       "currentAvailable": 78,
       "currentSold": 22,
@@ -1064,6 +1082,12 @@
         },
         {
           "capturedAt": "2026-06-24T16:31:50.211Z",
+          "available": 78,
+          "sold": 22,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-06-24T16:52:34.632Z",
           "available": 78,
           "sold": 22,
           "totalTickets": null
@@ -1324,6 +1348,12 @@
           "available": 0,
           "sold": 50,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-06-24T16:52:34.632Z",
+          "available": 0,
+          "sold": 50,
+          "totalTickets": null
         }
       ]
     },
@@ -1336,7 +1366,7 @@
       "capacity": 100,
       "firstSeenAt": "2026-06-24T00:01:41.848Z",
       "firstAvailableAt": "2026-06-24T00:01:41.848Z",
-      "lastAvailableAt": "2026-06-24T16:31:50.211Z",
+      "lastAvailableAt": "2026-06-24T16:52:34.632Z",
       "soldOutAt": null,
       "currentAvailable": 100,
       "currentSold": 0,
@@ -1578,6 +1608,12 @@
         },
         {
           "capturedAt": "2026-06-24T16:31:50.211Z",
+          "available": 100,
+          "sold": 0,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-06-24T16:52:34.632Z",
           "available": 100,
           "sold": 0,
           "totalTickets": null
@@ -179248,10 +179284,10 @@
     },
     {
       "observedDate": "2026-06-25",
-      "latestCapturedAt": "2026-06-24T16:31:50.211Z",
+      "latestCapturedAt": "2026-06-24T16:52:34.632Z",
       "totalTickets": null,
-      "totalAvailable": 797,
-      "totalSold": 203,
+      "totalAvailable": 796,
+      "totalSold": 204,
       "openRoutes": 5,
       "routes": [
         {
@@ -179278,8 +179314,8 @@
           "circuitName": "Circuito 2 - Circuito clásico",
           "routeName": "Ruta 2-A: Clásico Diseñada",
           "capacity": 600,
-          "available": 472,
-          "sold": 128
+          "available": 471,
+          "sold": 129
         },
         {
           "routeId": 12,
@@ -179313,7 +179349,7 @@
   ],
   "metrics": {
     "firstSnapshotAt": "2026-05-19T19:20:44.702Z",
-    "lastSnapshotAt": "2026-06-24T16:31:50.211Z",
+    "lastSnapshotAt": "2026-06-24T16:52:34.632Z",
     "trackedDateCount": 37,
     "routeCount": 6,
     "activeRouteDays": 130,
@@ -179321,11 +179357,11 @@
   },
   "status": {
     "state": "running",
-    "sessionStartedAt": "2026-06-24T16:41:27.782Z",
-    "lastHeartbeatAt": "2026-06-24T16:44:01.761Z",
-    "lastSnapshotAt": "2026-06-24T16:31:50.211Z",
+    "sessionStartedAt": "2026-06-24T16:51:36.869Z",
+    "lastHeartbeatAt": "2026-06-24T16:54:11.176Z",
+    "lastSnapshotAt": "2026-06-24T16:52:34.632Z",
     "lastObservedDate": "2026-06-25",
-    "snapshotsWritten": 4809,
+    "snapshotsWritten": 4810,
     "uniqueDatesObserved": [
       "2026-05-20",
       "2026-05-21",
