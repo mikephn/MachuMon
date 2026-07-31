@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-31T16:45:52.953Z",
+  "generatedAt": "2026-07-31T16:55:52.760Z",
   "source": "static",
-  "snapshotCount": 9892,
+  "snapshotCount": 9893,
   "trackedDates": [
     "2026-05-20",
     "2026-05-21",
@@ -89,10 +89,10 @@
       "capacity": 50,
       "firstSeenAt": "2026-07-30T19:14:05.392Z",
       "firstAvailableAt": "2026-07-30T19:14:05.392Z",
-      "lastAvailableAt": "2026-07-31T16:33:27.811Z",
+      "lastAvailableAt": "2026-07-31T16:53:47.465Z",
       "soldOutAt": null,
-      "currentAvailable": 35,
-      "currentSold": 15,
+      "currentAvailable": 26,
+      "currentSold": 24,
       "peakAvailable": 50,
       "points": [
         {
@@ -766,6 +766,12 @@
           "available": 35,
           "sold": 15,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-07-31T16:53:47.465Z",
+          "available": 26,
+          "sold": 24,
+          "totalTickets": null
         }
       ]
     },
@@ -778,7 +784,7 @@
       "capacity": 100,
       "firstSeenAt": "2026-07-30T19:14:05.392Z",
       "firstAvailableAt": "2026-07-30T19:14:05.392Z",
-      "lastAvailableAt": "2026-07-31T16:33:27.811Z",
+      "lastAvailableAt": "2026-07-31T16:53:47.465Z",
       "soldOutAt": null,
       "currentAvailable": 32,
       "currentSold": 68,
@@ -1452,6 +1458,12 @@
         },
         {
           "capturedAt": "2026-07-31T16:33:27.811Z",
+          "available": 32,
+          "sold": 68,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-07-31T16:53:47.465Z",
           "available": 32,
           "sold": 68,
           "totalTickets": null
@@ -2144,6 +2156,12 @@
           "available": 0,
           "sold": 600,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-07-31T16:53:47.465Z",
+          "available": 0,
+          "sold": 600,
+          "totalTickets": null
         }
       ]
     },
@@ -2833,6 +2851,12 @@
           "available": 0,
           "sold": 100,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-07-31T16:53:47.465Z",
+          "available": 0,
+          "sold": 100,
+          "totalTickets": null
         }
       ]
     },
@@ -2845,7 +2869,7 @@
       "capacity": 50,
       "firstSeenAt": "2026-07-30T19:14:05.392Z",
       "firstAvailableAt": "2026-07-30T19:14:05.392Z",
-      "lastAvailableAt": "2026-07-31T16:33:27.811Z",
+      "lastAvailableAt": "2026-07-31T16:53:47.465Z",
       "soldOutAt": null,
       "currentAvailable": 11,
       "currentSold": 39,
@@ -3519,6 +3543,12 @@
         },
         {
           "capturedAt": "2026-07-31T16:33:27.811Z",
+          "available": 11,
+          "sold": 39,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-07-31T16:53:47.465Z",
           "available": 11,
           "sold": 39,
           "totalTickets": null
@@ -4208,6 +4238,12 @@
         },
         {
           "capturedAt": "2026-07-31T16:33:27.811Z",
+          "available": 0,
+          "sold": 100,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-07-31T16:53:47.465Z",
           "available": 0,
           "sold": 100,
           "totalTickets": null
@@ -368582,10 +368618,10 @@
     },
     {
       "observedDate": "2026-08-02",
-      "latestCapturedAt": "2026-07-31T16:33:27.811Z",
+      "latestCapturedAt": "2026-07-31T16:53:47.465Z",
       "totalTickets": null,
-      "totalAvailable": 78,
-      "totalSold": 922,
+      "totalAvailable": 69,
+      "totalSold": 931,
       "openRoutes": 3,
       "routes": [
         {
@@ -368594,8 +368630,8 @@
           "circuitName": "Circuito 1 - Panorámico",
           "routeName": "Ruta 1-A: Montaña Machupicchu",
           "capacity": 50,
-          "available": 35,
-          "sold": 15
+          "available": 26,
+          "sold": 24
         },
         {
           "routeId": 8,
@@ -368647,7 +368683,7 @@
   ],
   "metrics": {
     "firstSnapshotAt": "2026-05-19T19:20:44.702Z",
-    "lastSnapshotAt": "2026-07-31T16:33:27.811Z",
+    "lastSnapshotAt": "2026-07-31T16:53:47.465Z",
     "trackedDateCount": 75,
     "routeCount": 6,
     "activeRouteDays": 277,
@@ -368655,11 +368691,11 @@
   },
   "status": {
     "state": "running",
-    "sessionStartedAt": "2026-07-31T16:43:21.134Z",
-    "lastHeartbeatAt": "2026-07-31T16:45:52.274Z",
-    "lastSnapshotAt": "2026-07-31T16:33:27.811Z",
+    "sessionStartedAt": "2026-07-31T16:53:18.530Z",
+    "lastHeartbeatAt": "2026-07-31T16:55:52.096Z",
+    "lastSnapshotAt": "2026-07-31T16:53:47.465Z",
     "lastObservedDate": "2026-08-02",
-    "snapshotsWritten": 9892,
+    "snapshotsWritten": 9893,
     "uniqueDatesObserved": [
       "2026-05-20",
       "2026-05-21",
