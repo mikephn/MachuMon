@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-26T21:40:04.691Z",
+  "generatedAt": "2026-09-26T21:50:01.477Z",
   "source": "static",
-  "snapshotCount": 19212,
+  "snapshotCount": 19213,
   "trackedDates": [
     "2026-05-20",
     "2026-05-21",
@@ -1170,6 +1170,12 @@
           "available": 0,
           "sold": 50,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-09-26T21:47:35.297Z",
+          "available": 0,
+          "sold": 50,
+          "totalTickets": null
         }
       ]
     },
@@ -1182,10 +1188,10 @@
       "capacity": 100,
       "firstSeenAt": "2026-09-25T18:47:40.997Z",
       "firstAvailableAt": "2026-09-25T18:47:40.997Z",
-      "lastAvailableAt": "2026-09-26T21:38:32.315Z",
+      "lastAvailableAt": "2026-09-26T21:47:35.297Z",
       "soldOutAt": null,
-      "currentAvailable": 6,
-      "currentSold": 94,
+      "currentAvailable": 4,
+      "currentSold": 96,
       "peakAvailable": 100,
       "points": [
         {
@@ -2206,6 +2212,12 @@
           "capturedAt": "2026-09-26T21:38:32.315Z",
           "available": 6,
           "sold": 94,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-09-26T21:47:35.297Z",
+          "available": 4,
+          "sold": 96,
           "totalTickets": null
         }
       ]
@@ -3241,6 +3253,12 @@
         },
         {
           "capturedAt": "2026-09-26T21:38:32.315Z",
+          "available": 0,
+          "sold": 600,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-09-26T21:47:35.297Z",
           "available": 0,
           "sold": 600,
           "totalTickets": null
@@ -4281,6 +4299,12 @@
           "available": 0,
           "sold": 100,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-09-26T21:47:35.297Z",
+          "available": 0,
+          "sold": 100,
+          "totalTickets": null
         }
       ]
     },
@@ -5318,6 +5342,12 @@
           "available": 0,
           "sold": 50,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-09-26T21:47:35.297Z",
+          "available": 0,
+          "sold": 50,
+          "totalTickets": null
         }
       ]
     },
@@ -6352,6 +6382,12 @@
         },
         {
           "capturedAt": "2026-09-26T21:38:32.315Z",
+          "available": 0,
+          "sold": 100,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-09-26T21:47:35.297Z",
           "available": 0,
           "sold": 100,
           "totalTickets": null
@@ -713454,10 +713490,10 @@
     },
     {
       "observedDate": "2026-09-27",
-      "latestCapturedAt": "2026-09-26T21:38:32.315Z",
+      "latestCapturedAt": "2026-09-26T21:47:35.297Z",
       "totalTickets": null,
-      "totalAvailable": 6,
-      "totalSold": 994,
+      "totalAvailable": 4,
+      "totalSold": 996,
       "openRoutes": 1,
       "routes": [
         {
@@ -713475,8 +713511,8 @@
           "circuitName": "Circuito 1 - Panorámico",
           "routeName": "Ruta 1-B: Terraza superior",
           "capacity": 100,
-          "available": 6,
-          "sold": 94
+          "available": 4,
+          "sold": 96
         },
         {
           "routeId": 11,
@@ -713519,7 +713555,7 @@
   ],
   "metrics": {
     "firstSnapshotAt": "2026-05-19T19:20:44.702Z",
-    "lastSnapshotAt": "2026-09-26T21:38:32.315Z",
+    "lastSnapshotAt": "2026-09-26T21:47:35.297Z",
     "trackedDateCount": 131,
     "routeCount": 6,
     "activeRouteDays": 384,
@@ -713527,11 +713563,11 @@
   },
   "status": {
     "state": "running",
-    "sessionStartedAt": "2026-09-26T21:37:30.105Z",
-    "lastHeartbeatAt": "2026-09-26T21:40:03.862Z",
-    "lastSnapshotAt": "2026-09-26T21:38:32.315Z",
+    "sessionStartedAt": "2026-09-26T21:47:27.130Z",
+    "lastHeartbeatAt": "2026-09-26T21:50:00.604Z",
+    "lastSnapshotAt": "2026-09-26T21:47:35.297Z",
     "lastObservedDate": "2026-09-27",
-    "snapshotsWritten": 19212,
+    "snapshotsWritten": 19213,
     "uniqueDatesObserved": [
       "2026-05-20",
       "2026-05-21",
