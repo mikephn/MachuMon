@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-28T21:31:40.916Z",
+  "generatedAt": "2026-09-28T21:41:44.268Z",
   "source": "static",
-  "snapshotCount": 19576,
+  "snapshotCount": 19577,
   "trackedDates": [
     "2026-05-20",
     "2026-05-21",
@@ -147,7 +147,7 @@
       "capacity": 50,
       "firstSeenAt": "2026-09-27T22:59:29.556Z",
       "firstAvailableAt": "2026-09-27T22:59:29.556Z",
-      "lastAvailableAt": "2026-09-28T21:29:14.533Z",
+      "lastAvailableAt": "2026-09-28T21:39:18.068Z",
       "soldOutAt": null,
       "currentAvailable": 28,
       "currentSold": 22,
@@ -1022,6 +1022,12 @@
           "available": 28,
           "sold": 22,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-09-28T21:39:18.068Z",
+          "available": 28,
+          "sold": 22,
+          "totalTickets": null
         }
       ]
     },
@@ -1034,10 +1040,10 @@
       "capacity": 100,
       "firstSeenAt": "2026-09-27T22:59:29.556Z",
       "firstAvailableAt": "2026-09-27T22:59:29.556Z",
-      "lastAvailableAt": "2026-09-28T21:29:14.533Z",
+      "lastAvailableAt": "2026-09-28T21:39:18.068Z",
       "soldOutAt": null,
-      "currentAvailable": 77,
-      "currentSold": 23,
+      "currentAvailable": 75,
+      "currentSold": 25,
       "peakAvailable": 100,
       "points": [
         {
@@ -1908,6 +1914,12 @@
           "capturedAt": "2026-09-28T21:29:14.533Z",
           "available": 77,
           "sold": 23,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-09-28T21:39:18.068Z",
+          "available": 75,
+          "sold": 25,
           "totalTickets": null
         }
       ]
@@ -2793,6 +2805,12 @@
         },
         {
           "capturedAt": "2026-09-28T21:29:14.533Z",
+          "available": 0,
+          "sold": 600,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-09-28T21:39:18.068Z",
           "available": 0,
           "sold": 600,
           "totalTickets": null
@@ -3683,6 +3701,12 @@
           "available": 0,
           "sold": 100,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-09-28T21:39:18.068Z",
+          "available": 0,
+          "sold": 100,
+          "totalTickets": null
         }
       ]
     },
@@ -3695,7 +3719,7 @@
       "capacity": 50,
       "firstSeenAt": "2026-09-27T22:59:29.556Z",
       "firstAvailableAt": "2026-09-27T22:59:29.556Z",
-      "lastAvailableAt": "2026-09-28T21:29:14.533Z",
+      "lastAvailableAt": "2026-09-28T21:39:18.068Z",
       "soldOutAt": null,
       "currentAvailable": 2,
       "currentSold": 48,
@@ -4570,6 +4594,12 @@
           "available": 2,
           "sold": 48,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-09-28T21:39:18.068Z",
+          "available": 2,
+          "sold": 48,
+          "totalTickets": null
         }
       ]
     },
@@ -4582,7 +4612,7 @@
       "capacity": 100,
       "firstSeenAt": "2026-09-27T22:59:29.556Z",
       "firstAvailableAt": "2026-09-27T22:59:29.556Z",
-      "lastAvailableAt": "2026-09-28T21:29:14.533Z",
+      "lastAvailableAt": "2026-09-28T21:39:18.068Z",
       "soldOutAt": null,
       "currentAvailable": 25,
       "currentSold": 75,
@@ -5454,6 +5484,12 @@
         },
         {
           "capturedAt": "2026-09-28T21:29:14.533Z",
+          "available": 25,
+          "sold": 75,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-09-28T21:39:18.068Z",
           "available": 25,
           "sold": 75,
           "totalTickets": null
@@ -726892,10 +726928,10 @@
     },
     {
       "observedDate": "2026-09-29",
-      "latestCapturedAt": "2026-09-28T21:29:14.533Z",
+      "latestCapturedAt": "2026-09-28T21:39:18.068Z",
       "totalTickets": null,
-      "totalAvailable": 132,
-      "totalSold": 868,
+      "totalAvailable": 130,
+      "totalSold": 870,
       "openRoutes": 4,
       "routes": [
         {
@@ -726913,8 +726949,8 @@
           "circuitName": "Circuito 1 - Panorámico",
           "routeName": "Ruta 1-B: Terraza superior",
           "capacity": 100,
-          "available": 77,
-          "sold": 23
+          "available": 75,
+          "sold": 25
         },
         {
           "routeId": 11,
@@ -726957,7 +726993,7 @@
   ],
   "metrics": {
     "firstSnapshotAt": "2026-05-19T19:20:44.702Z",
-    "lastSnapshotAt": "2026-09-28T21:29:14.533Z",
+    "lastSnapshotAt": "2026-09-28T21:39:18.068Z",
     "trackedDateCount": 133,
     "routeCount": 6,
     "activeRouteDays": 387,
@@ -726965,11 +727001,11 @@
   },
   "status": {
     "state": "running",
-    "sessionStartedAt": "2026-09-28T21:29:05.861Z",
-    "lastHeartbeatAt": "2026-09-28T21:31:40.212Z",
-    "lastSnapshotAt": "2026-09-28T21:29:14.533Z",
+    "sessionStartedAt": "2026-09-28T21:39:09.654Z",
+    "lastHeartbeatAt": "2026-09-28T21:41:43.423Z",
+    "lastSnapshotAt": "2026-09-28T21:39:18.068Z",
     "lastObservedDate": "2026-09-29",
-    "snapshotsWritten": 19576,
+    "snapshotsWritten": 19577,
     "uniqueDatesObserved": [
       "2026-05-20",
       "2026-05-21",
