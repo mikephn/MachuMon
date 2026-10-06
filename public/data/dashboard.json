@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-06T21:59:09.336Z",
+  "generatedAt": "2026-10-06T22:10:11.089Z",
   "source": "static",
-  "snapshotCount": 20593,
+  "snapshotCount": 20594,
   "trackedDates": [
     "2026-05-20",
     "2026-05-21",
@@ -155,10 +155,10 @@
       "capacity": 50,
       "firstSeenAt": "2026-10-06T00:16:54.953Z",
       "firstAvailableAt": "2026-10-06T00:16:54.953Z",
-      "lastAvailableAt": "2026-10-06T21:45:43.791Z",
+      "lastAvailableAt": "2026-10-06T22:07:45.031Z",
       "soldOutAt": null,
-      "currentAvailable": 26,
-      "currentSold": 24,
+      "currentAvailable": 25,
+      "currentSold": 25,
       "peakAvailable": 50,
       "points": [
         {
@@ -790,6 +790,12 @@
           "available": 26,
           "sold": 24,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-10-06T22:07:45.031Z",
+          "available": 25,
+          "sold": 25,
+          "totalTickets": null
         }
       ]
     },
@@ -802,7 +808,7 @@
       "capacity": 100,
       "firstSeenAt": "2026-10-06T00:16:54.953Z",
       "firstAvailableAt": "2026-10-06T00:16:54.953Z",
-      "lastAvailableAt": "2026-10-06T21:45:43.791Z",
+      "lastAvailableAt": "2026-10-06T22:07:45.031Z",
       "soldOutAt": null,
       "currentAvailable": 8,
       "currentSold": 92,
@@ -1434,6 +1440,12 @@
         },
         {
           "capturedAt": "2026-10-06T21:45:43.791Z",
+          "available": 8,
+          "sold": 92,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-10-06T22:07:45.031Z",
           "available": 8,
           "sold": 92,
           "totalTickets": null
@@ -2084,6 +2096,12 @@
           "available": 0,
           "sold": 600,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-10-06T22:07:45.031Z",
+          "available": 0,
+          "sold": 600,
+          "totalTickets": null
         }
       ]
     },
@@ -2728,6 +2746,12 @@
         },
         {
           "capturedAt": "2026-10-06T21:45:43.791Z",
+          "available": 0,
+          "sold": 100,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-10-06T22:07:45.031Z",
           "available": 0,
           "sold": 100,
           "totalTickets": null
@@ -3378,6 +3402,12 @@
           "available": 0,
           "sold": 50,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-10-06T22:07:45.031Z",
+          "available": 0,
+          "sold": 50,
+          "totalTickets": null
         }
       ]
     },
@@ -3390,10 +3420,10 @@
       "capacity": 100,
       "firstSeenAt": "2026-10-06T00:16:54.953Z",
       "firstAvailableAt": "2026-10-06T00:16:54.953Z",
-      "lastAvailableAt": "2026-10-06T21:45:43.791Z",
+      "lastAvailableAt": "2026-10-06T22:07:45.031Z",
       "soldOutAt": null,
-      "currentAvailable": 4,
-      "currentSold": 96,
+      "currentAvailable": 2,
+      "currentSold": 98,
       "peakAvailable": 100,
       "points": [
         {
@@ -4024,6 +4054,12 @@
           "capturedAt": "2026-10-06T21:45:43.791Z",
           "available": 4,
           "sold": 96,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-10-06T22:07:45.031Z",
+          "available": 2,
+          "sold": 98,
           "totalTickets": null
         }
       ]
@@ -764840,10 +764876,10 @@
     },
     {
       "observedDate": "2026-10-07",
-      "latestCapturedAt": "2026-10-06T21:45:43.791Z",
+      "latestCapturedAt": "2026-10-06T22:07:45.031Z",
       "totalTickets": null,
-      "totalAvailable": 38,
-      "totalSold": 962,
+      "totalAvailable": 35,
+      "totalSold": 965,
       "openRoutes": 3,
       "routes": [
         {
@@ -764852,8 +764888,8 @@
           "circuitName": "Circuito 1 - Panorámico",
           "routeName": "Ruta 1-A: Montaña Machupicchu",
           "capacity": 50,
-          "available": 26,
-          "sold": 24
+          "available": 25,
+          "sold": 25
         },
         {
           "routeId": 8,
@@ -764897,15 +764933,15 @@
           "circuitName": "Circuito 3 - Machupicchu realeza",
           "routeName": "Ruta 3-B: Realeza diseñada",
           "capacity": 100,
-          "available": 4,
-          "sold": 96
+          "available": 2,
+          "sold": 98
         }
       ]
     }
   ],
   "metrics": {
     "firstSnapshotAt": "2026-05-19T19:20:44.702Z",
-    "lastSnapshotAt": "2026-10-06T21:45:43.791Z",
+    "lastSnapshotAt": "2026-10-06T22:07:45.031Z",
     "trackedDateCount": 141,
     "routeCount": 6,
     "activeRouteDays": 425,
@@ -764913,11 +764949,11 @@
   },
   "status": {
     "state": "running",
-    "sessionStartedAt": "2026-10-06T21:56:37.349Z",
-    "lastHeartbeatAt": "2026-10-06T21:59:08.477Z",
-    "lastSnapshotAt": "2026-10-06T21:45:43.791Z",
+    "sessionStartedAt": "2026-10-06T22:07:36.046Z",
+    "lastHeartbeatAt": "2026-10-06T22:10:10.223Z",
+    "lastSnapshotAt": "2026-10-06T22:07:45.031Z",
     "lastObservedDate": "2026-10-07",
-    "snapshotsWritten": 20593,
+    "snapshotsWritten": 20594,
     "uniqueDatesObserved": [
       "2026-05-20",
       "2026-05-21",
