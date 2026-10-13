@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-13T23:26:40.421Z",
+  "generatedAt": "2026-10-13T23:47:31.764Z",
   "source": "static",
-  "snapshotCount": 22364,
+  "snapshotCount": 22365,
   "trackedDates": [
     "2026-05-20",
     "2026-05-21",
@@ -709,6 +709,12 @@
           "available": 0,
           "sold": 50,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-10-13T23:45:23.384Z",
+          "available": 0,
+          "sold": 50,
+          "totalTickets": null
         }
       ]
     },
@@ -1263,6 +1269,12 @@
         },
         {
           "capturedAt": "2026-10-13T23:26:33.516Z",
+          "available": 0,
+          "sold": 100,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-10-13T23:45:23.384Z",
           "available": 0,
           "sold": 100,
           "totalTickets": null
@@ -1823,6 +1835,12 @@
           "available": 0,
           "sold": 600,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-10-13T23:45:23.384Z",
+          "available": 0,
+          "sold": 600,
+          "totalTickets": null
         }
       ]
     },
@@ -2380,6 +2398,12 @@
           "available": 0,
           "sold": 100,
           "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-10-13T23:45:23.384Z",
+          "available": 0,
+          "sold": 100,
+          "totalTickets": null
         }
       ]
     },
@@ -2392,10 +2416,10 @@
       "capacity": 50,
       "firstSeenAt": "2026-10-13T14:02:26.438Z",
       "firstAvailableAt": "2026-10-13T14:02:26.438Z",
-      "lastAvailableAt": "2026-10-13T23:26:33.516Z",
+      "lastAvailableAt": "2026-10-13T23:45:23.384Z",
       "soldOutAt": null,
-      "currentAvailable": 18,
-      "currentSold": 32,
+      "currentAvailable": 6,
+      "currentSold": 44,
       "peakAvailable": 50,
       "points": [
         {
@@ -2936,6 +2960,12 @@
           "capturedAt": "2026-10-13T23:26:33.516Z",
           "available": 18,
           "sold": 32,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-10-13T23:45:23.384Z",
+          "available": 6,
+          "sold": 44,
           "totalTickets": null
         }
       ]
@@ -3491,6 +3521,12 @@
         },
         {
           "capturedAt": "2026-10-13T23:26:33.516Z",
+          "available": 0,
+          "sold": 100,
+          "totalTickets": null
+        },
+        {
+          "capturedAt": "2026-10-13T23:45:23.384Z",
           "available": 0,
           "sold": 100,
           "totalTickets": null
@@ -830099,10 +830135,10 @@
     },
     {
       "observedDate": "2026-10-16",
-      "latestCapturedAt": "2026-10-13T23:26:33.516Z",
+      "latestCapturedAt": "2026-10-13T23:45:23.384Z",
       "totalTickets": null,
-      "totalAvailable": 18,
-      "totalSold": 982,
+      "totalAvailable": 6,
+      "totalSold": 994,
       "openRoutes": 1,
       "routes": [
         {
@@ -830147,8 +830183,8 @@
           "circuitName": "Circuito 3 - Machupicchu realeza",
           "routeName": "Ruta 3-A: Montaña Waynapicchu",
           "capacity": 50,
-          "available": 18,
-          "sold": 32
+          "available": 6,
+          "sold": 44
         },
         {
           "routeId": 14,
@@ -830164,7 +830200,7 @@
   ],
   "metrics": {
     "firstSnapshotAt": "2026-05-19T19:20:44.702Z",
-    "lastSnapshotAt": "2026-10-13T23:26:33.516Z",
+    "lastSnapshotAt": "2026-10-13T23:45:23.384Z",
     "trackedDateCount": 150,
     "routeCount": 6,
     "activeRouteDays": 423,
@@ -830172,11 +830208,11 @@
   },
   "status": {
     "state": "running",
-    "sessionStartedAt": "2026-10-13T23:24:05.692Z",
-    "lastHeartbeatAt": "2026-10-13T23:26:39.486Z",
-    "lastSnapshotAt": "2026-10-13T23:26:33.516Z",
+    "sessionStartedAt": "2026-10-13T23:44:56.045Z",
+    "lastHeartbeatAt": "2026-10-13T23:47:31.161Z",
+    "lastSnapshotAt": "2026-10-13T23:45:23.384Z",
     "lastObservedDate": "2026-10-16",
-    "snapshotsWritten": 22364,
+    "snapshotsWritten": 22365,
     "uniqueDatesObserved": [
       "2026-05-20",
       "2026-05-21",
