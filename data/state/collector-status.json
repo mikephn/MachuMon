@@ -1,7 +1,7 @@
 {
-  "state": "running",
-  "sessionStartedAt": "2026-10-20T21:41:07.277Z",
-  "lastHeartbeatAt": "2026-10-20T21:43:41.343Z",
+  "state": "error",
+  "sessionStartedAt": "2026-10-20T21:49:31.681Z",
+  "lastHeartbeatAt": "2026-10-20T21:52:06.157Z",
   "lastSnapshotAt": "2026-10-20T18:35:19.502Z",
   "lastObservedDate": "2026-10-21",
   "snapshotsWritten": 23407,
@@ -163,6 +163,6 @@
     "2026-10-21",
     "2026-10-22"
   ],
-  "lastError": null,
+  "lastError": "response.json: Protocol error (Network.getResponseBody): No resource with given identifier found",
   "targetUrl": "https://tuboleto.cultura.pe/cusco/1000boletos"
 }
