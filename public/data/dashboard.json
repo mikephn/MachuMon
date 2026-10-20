@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T23:19:08.943Z",
+  "generatedAt": "2026-10-20T23:27:57.365Z",
   "source": "static",
   "snapshotCount": 23407,
   "trackedDates": [
@@ -868721,9 +868721,9 @@
     "soldOutRouteDays": 460
   },
   "status": {
-    "state": "running",
-    "sessionStartedAt": "2026-10-20T23:16:33.573Z",
-    "lastHeartbeatAt": "2026-10-20T23:19:08.104Z",
+    "state": "error",
+    "sessionStartedAt": "2026-10-20T23:25:22.441Z",
+    "lastHeartbeatAt": "2026-10-20T23:27:56.612Z",
     "lastSnapshotAt": "2026-10-20T18:35:19.502Z",
     "lastObservedDate": "2026-10-21",
     "snapshotsWritten": 23407,
@@ -868885,7 +868885,7 @@
       "2026-10-21",
       "2026-10-22"
     ],
-    "lastError": null,
+    "lastError": "response.json: Protocol error (Network.getResponseBody): No resource with given identifier found",
     "targetUrl": "https://tuboleto.cultura.pe/cusco/1000boletos"
   }
 }
