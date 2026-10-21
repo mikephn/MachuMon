@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-21T00:13:54.038Z",
+  "generatedAt": "2026-10-21T00:26:21.186Z",
   "source": "static",
-  "snapshotCount": 23408,
+  "snapshotCount": 23409,
   "trackedDates": [
     "2026-05-20",
     "2026-05-21",
@@ -158,9 +158,148 @@
     "2026-10-19",
     "2026-10-20",
     "2026-10-21",
-    "2026-10-22"
+    "2026-10-22",
+    "2026-10-23"
   ],
   "routeDaySeries": [
+    {
+      "key": "2026-10-23:7",
+      "observedDate": "2026-10-23",
+      "routeId": 7,
+      "circuitName": "Circuito 1 - Panorámico",
+      "routeName": "Ruta 1-A: Montaña Machupicchu",
+      "capacity": 50,
+      "firstSeenAt": "2026-10-21T00:24:04.076Z",
+      "firstAvailableAt": "2026-10-21T00:24:04.076Z",
+      "lastAvailableAt": "2026-10-21T00:24:04.076Z",
+      "soldOutAt": null,
+      "currentAvailable": 50,
+      "currentSold": 0,
+      "peakAvailable": 50,
+      "points": [
+        {
+          "capturedAt": "2026-10-21T00:24:04.076Z",
+          "available": 50,
+          "sold": 0,
+          "totalTickets": null
+        }
+      ]
+    },
+    {
+      "key": "2026-10-23:8",
+      "observedDate": "2026-10-23",
+      "routeId": 8,
+      "circuitName": "Circuito 1 - Panorámico",
+      "routeName": "Ruta 1-B: Terraza superior",
+      "capacity": 100,
+      "firstSeenAt": "2026-10-21T00:24:04.076Z",
+      "firstAvailableAt": "2026-10-21T00:24:04.076Z",
+      "lastAvailableAt": "2026-10-21T00:24:04.076Z",
+      "soldOutAt": null,
+      "currentAvailable": 100,
+      "currentSold": 0,
+      "peakAvailable": 100,
+      "points": [
+        {
+          "capturedAt": "2026-10-21T00:24:04.076Z",
+          "available": 100,
+          "sold": 0,
+          "totalTickets": null
+        }
+      ]
+    },
+    {
+      "key": "2026-10-23:11",
+      "observedDate": "2026-10-23",
+      "routeId": 11,
+      "circuitName": "Circuito 2 - Circuito clásico",
+      "routeName": "Ruta 2-A: Clásico Diseñada",
+      "capacity": 600,
+      "firstSeenAt": "2026-10-21T00:24:04.076Z",
+      "firstAvailableAt": "2026-10-21T00:24:04.076Z",
+      "lastAvailableAt": "2026-10-21T00:24:04.076Z",
+      "soldOutAt": null,
+      "currentAvailable": 527,
+      "currentSold": 73,
+      "peakAvailable": 527,
+      "points": [
+        {
+          "capturedAt": "2026-10-21T00:24:04.076Z",
+          "available": 527,
+          "sold": 73,
+          "totalTickets": null
+        }
+      ]
+    },
+    {
+      "key": "2026-10-23:12",
+      "observedDate": "2026-10-23",
+      "routeId": 12,
+      "circuitName": "Circuito 2 - Circuito clásico",
+      "routeName": "Ruta 2-B: Terraza Inferior",
+      "capacity": 100,
+      "firstSeenAt": "2026-10-21T00:24:04.076Z",
+      "firstAvailableAt": "2026-10-21T00:24:04.076Z",
+      "lastAvailableAt": "2026-10-21T00:24:04.076Z",
+      "soldOutAt": null,
+      "currentAvailable": 81,
+      "currentSold": 19,
+      "peakAvailable": 81,
+      "points": [
+        {
+          "capturedAt": "2026-10-21T00:24:04.076Z",
+          "available": 81,
+          "sold": 19,
+          "totalTickets": null
+        }
+      ]
+    },
+    {
+      "key": "2026-10-23:13",
+      "observedDate": "2026-10-23",
+      "routeId": 13,
+      "circuitName": "Circuito 3 - Machupicchu realeza",
+      "routeName": "Ruta 3-A: Montaña Waynapicchu",
+      "capacity": 50,
+      "firstSeenAt": "2026-10-21T00:24:04.076Z",
+      "firstAvailableAt": "2026-10-21T00:24:04.076Z",
+      "lastAvailableAt": "2026-10-21T00:24:04.076Z",
+      "soldOutAt": null,
+      "currentAvailable": 45,
+      "currentSold": 5,
+      "peakAvailable": 45,
+      "points": [
+        {
+          "capturedAt": "2026-10-21T00:24:04.076Z",
+          "available": 45,
+          "sold": 5,
+          "totalTickets": null
+        }
+      ]
+    },
+    {
+      "key": "2026-10-23:14",
+      "observedDate": "2026-10-23",
+      "routeId": 14,
+      "circuitName": "Circuito 3 - Machupicchu realeza",
+      "routeName": "Ruta 3-B: Realeza diseñada",
+      "capacity": 100,
+      "firstSeenAt": "2026-10-21T00:24:04.076Z",
+      "firstAvailableAt": "2026-10-21T00:24:04.076Z",
+      "lastAvailableAt": "2026-10-21T00:24:04.076Z",
+      "soldOutAt": null,
+      "currentAvailable": 100,
+      "currentSold": 0,
+      "peakAvailable": 100,
+      "points": [
+        {
+          "capturedAt": "2026-10-21T00:24:04.076Z",
+          "available": 100,
+          "sold": 0,
+          "totalTickets": null
+        }
+      ]
+    },
     {
       "key": "2026-10-22:7",
       "observedDate": "2026-10-22",
@@ -868746,23 +868885,87 @@
           "sold": 100
         }
       ]
+    },
+    {
+      "observedDate": "2026-10-23",
+      "latestCapturedAt": "2026-10-21T00:24:04.076Z",
+      "totalTickets": null,
+      "totalAvailable": 903,
+      "totalSold": 97,
+      "openRoutes": 6,
+      "routes": [
+        {
+          "routeId": 7,
+          "circuitId": 1,
+          "circuitName": "Circuito 1 - Panorámico",
+          "routeName": "Ruta 1-A: Montaña Machupicchu",
+          "capacity": 50,
+          "available": 50,
+          "sold": 0
+        },
+        {
+          "routeId": 8,
+          "circuitId": 1,
+          "circuitName": "Circuito 1 - Panorámico",
+          "routeName": "Ruta 1-B: Terraza superior",
+          "capacity": 100,
+          "available": 100,
+          "sold": 0
+        },
+        {
+          "routeId": 11,
+          "circuitId": 2,
+          "circuitName": "Circuito 2 - Circuito clásico",
+          "routeName": "Ruta 2-A: Clásico Diseñada",
+          "capacity": 600,
+          "available": 527,
+          "sold": 73
+        },
+        {
+          "routeId": 12,
+          "circuitId": 2,
+          "circuitName": "Circuito 2 - Circuito clásico",
+          "routeName": "Ruta 2-B: Terraza Inferior",
+          "capacity": 100,
+          "available": 81,
+          "sold": 19
+        },
+        {
+          "routeId": 13,
+          "circuitId": 3,
+          "circuitName": "Circuito 3 - Machupicchu realeza",
+          "routeName": "Ruta 3-A: Montaña Waynapicchu",
+          "capacity": 50,
+          "available": 45,
+          "sold": 5
+        },
+        {
+          "routeId": 14,
+          "circuitId": 3,
+          "circuitName": "Circuito 3 - Machupicchu realeza",
+          "routeName": "Ruta 3-B: Realeza diseñada",
+          "capacity": 100,
+          "available": 100,
+          "sold": 0
+        }
+      ]
     }
   ],
   "metrics": {
     "firstSnapshotAt": "2026-05-19T19:20:44.702Z",
-    "lastSnapshotAt": "2026-10-21T00:11:26.179Z",
-    "trackedDateCount": 156,
+    "lastSnapshotAt": "2026-10-21T00:24:04.076Z",
+    "trackedDateCount": 157,
     "routeCount": 6,
-    "activeRouteDays": 422,
+    "activeRouteDays": 428,
     "soldOutRouteDays": 466
   },
   "status": {
     "state": "running",
-    "sessionStartedAt": "2026-10-21T00:11:19.501Z",
-    "lastHeartbeatAt": "2026-10-21T00:13:53.115Z",
-    "lastSnapshotAt": "2026-10-21T00:11:26.179Z",
-    "lastObservedDate": "2026-10-22",
-    "snapshotsWritten": 23408,
+    "sessionStartedAt": "2026-10-21T00:23:46.779Z",
+    "lastHeartbeatAt": "2026-10-21T00:26:20.176Z",
+    "lastSnapshotAt": "2026-10-21T00:24:04.076Z",
+    "lastObservedDate": "2026-10-23",
+    "snapshotsWritten": 23409,
     "uniqueDatesObserved": [
       "2026-05-20",
       "2026-05-21",
@@ -868919,7 +869122,8 @@
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
-      "2026-10-22"
+      "2026-10-22",
+      "2026-10-23"
     ],
     "lastError": null,
     "targetUrl": "https://tuboleto.cultura.pe/cusco/1000boletos"
